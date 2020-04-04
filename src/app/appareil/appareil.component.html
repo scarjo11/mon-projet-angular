@@ -4,6 +4,7 @@
                 }" >
 
   <h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilName }} -- Statut : {{ getStatus() }}</h4>
+  <a [routerLink]="[id]">Détails</a>
   <button class="btn btn-success"
           (click)="onSwitchOnOne()"
           [disabled]="appareilStatus === 'allumé'">Allumer</button>
